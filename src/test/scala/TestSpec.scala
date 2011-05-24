@@ -14,7 +14,7 @@ object newSpecification extends Specification {
       m_graph.addEdge(from, to, cost) ;
       m_graph.addEdge(to, from, cost) ;
     }
-    def calcTotal(paths: List[Pair[String, java.lang.Integer]]) : java.lang.Integer = {
+    def calcTotal(paths: List[Pair[String, Int]]) : java.lang.Integer = {
         var total = 0;
         for(Pair(to,weight) <- paths)
 	    total = weight + total;
